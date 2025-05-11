@@ -8,51 +8,20 @@
 @import "modules/shadow";
 @import "modules/border";
 
-<<<<<<< HEAD
-// header
-.header {
-=======
 //header
 .header{
->>>>>>> footer
     padding: .5rem 0;
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
-<<<<<<< HEAD
-    z-index: 99;
-}
-body {
-    background: #000;
-=======
     z-index: 100;
->>>>>>> footer
 }
 .menu2 {
     display: flex;
     align-items: center;
 
     a {
-<<<<<<< HEAD
-        margin: 0 .5rem;
-        padding: 1rem;
-        color: white;
-
-        &.contact {
-            padding: 1rem 2rem;
-            background: $purple;
-            border-radius: 50px;
-
-            &:hover {
-                background: white;
-                color: $lightpurple;
-                cursor: pointer;
-            }
-        }
-
-        &:hover {
-=======
         .content {
             padding: 1rem 2rem;
             background: $purple;
@@ -65,24 +34,15 @@ body {
     
           
         &:hover{
->>>>>>> footer
             background: white;
             color: $lightpurple;
             cursor: pointer;
         }
     }
 }
-<<<<<<< HEAD
-
 #burger {
     display: none;
 }
-
-=======
-#burger {
-    display: none;
-}
->>>>>>> footer
 // home
 .ui {
     position: absolute;
@@ -97,10 +57,6 @@ body {
 .float {
     animation: float 2s linear infinite;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> footer
 @keyframes float {
 
     0%,
@@ -112,10 +68,6 @@ body {
         transform: translateY(-1.5rem);
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> footer
 // about
 .project {
     background: $purple;
@@ -135,85 +87,5 @@ body {
     &:hover {
         transform: scale(1.2);
         cursor: pointer;
-<<<<<<< HEAD
     }
 }
-
-// footer
-.submit {
-    a {
-        margin-left: 1rem;
-        padding: 1rem 2rem;
-        background: $purple;
-        color: white;
-        transition: 0.5s;
-        border-radius: 10rem;
-
-        &:hover {
-            background: white;
-            color: $lightpurple;
-        }
-    }
-}
-
-.share {
-    text-align: center;
-
-    a {
-        color: white;
-        height: 5rem;
-        width: 5rem;
-        line-height: 5rem;
-        background: $halfwhite;
-        border-radius: 50%;
-        margin: .5rem;
-
-        &:hover {
-            transform: scale(1.2);
-            background: $purple;
-            cursor: pointer;
-        }
-    }
-}
-
-@media screen and (max-width:1024px) {
-
-    .ui,
-    .web {
-        display: none;
-    }
-}
-
-@media screen and(max-width:768px) {
-    #burger {
-        display: block;
-    }
-
-    .menu2 {
-        position: absolute;
-        top: 100%;
-        background: $halfpurple;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        display: block;
-
-        a {
-            text-align: center;
-            display: block;
-            margin: 7.5rem 0;
-
-            &.contact {
-                margin: 0 25%;
-            }
-        }
-
-        &.active {
-            right: 0;
-        }
-    }
-}
-=======
-    }
-}
->>>>>>> footer
