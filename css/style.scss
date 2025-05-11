@@ -1,0 +1,91 @@
+@import "modules/color";
+@import "modules/general";
+@import "modules/grid";
+@import "modules/typo";
+@import "modules/spacer";
+@import "modules/image";
+@import "modules/button";
+@import "modules/shadow";
+@import "modules/border";
+
+//header
+.header{
+    padding: .5rem 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.menu2 {
+    display: flex;
+    align-items: center;
+
+    a {
+        .content {
+            padding: 1rem 2rem;
+            background: $purple;
+    
+            &:hover {
+                background: white;
+                color: $lightpurple;
+            }
+        }
+    
+          
+        &:hover{
+            background: white;
+            color: $lightpurple;
+            cursor: pointer;
+        }
+    }
+}
+#burger {
+    display: none;
+}
+// home
+.ui {
+    position: absolute;
+    top: 35rem;
+}
+
+.web {
+    position: absolute;
+    top: 10rem;
+}
+
+.float {
+    animation: float 2s linear infinite;
+}
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-1.5rem);
+    }
+}
+// about
+.project {
+    background: $purple;
+    padding: 2.5rem 2rem;
+    border-radius: 30px;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+// services
+.curd {
+    border-radius: 30px;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
