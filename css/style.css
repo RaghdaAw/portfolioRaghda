@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+=======
+.header {
+  padding: 0.5rem 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.menu2 {
+  display: flex;
+  align-items: center;
+}
+.menu2 a .content {
+  padding: 1rem 2rem;
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+.menu2 a .content:hover {
+  background: white;
+  color: #9F39DA;
+}
+.menu2 a:hover {
+  background: white;
+  color: #9F39DA;
+  cursor: pointer;
+}
+
+#burger {
+  display: none;
+}
+
+.ui {
+  position: absolute;
+  top: 35rem;
+}
+
+.web {
+  position: absolute;
+  top: 10rem;
+}
+
+.float {
+  animation: float 2s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+}
+.project {
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  padding: 2.5rem 2rem;
+  border-radius: 30px;
+}
+.project:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.curd {
+  border-radius: 30px;
+}
+.curd:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> footer

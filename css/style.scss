@@ -8,23 +8,33 @@
 @import "modules/shadow";
 @import "modules/border";
 
+<<<<<<< HEAD
 // header
 .header {
+=======
+//header
+.header{
+>>>>>>> footer
     padding: .5rem 0;
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
+<<<<<<< HEAD
     z-index: 99;
 }
 body {
     background: #000;
+=======
+    z-index: 100;
+>>>>>>> footer
 }
 .menu2 {
     display: flex;
     align-items: center;
 
     a {
+<<<<<<< HEAD
         margin: 0 .5rem;
         padding: 1rem;
         color: white;
@@ -42,17 +52,37 @@ body {
         }
 
         &:hover {
+=======
+        .content {
+            padding: 1rem 2rem;
+            background: $purple;
+    
+            &:hover {
+                background: white;
+                color: $lightpurple;
+            }
+        }
+    
+          
+        &:hover{
+>>>>>>> footer
             background: white;
             color: $lightpurple;
             cursor: pointer;
         }
     }
 }
+<<<<<<< HEAD
 
 #burger {
     display: none;
 }
 
+=======
+#burger {
+    display: none;
+}
+>>>>>>> footer
 // home
 .ui {
     position: absolute;
@@ -67,7 +97,10 @@ body {
 .float {
     animation: float 2s linear infinite;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> footer
 @keyframes float {
 
     0%,
@@ -79,7 +112,10 @@ body {
         transform: translateY(-1.5rem);
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> footer
 // about
 .project {
     background: $purple;
@@ -99,6 +135,7 @@ body {
     &:hover {
         transform: scale(1.2);
         cursor: pointer;
+<<<<<<< HEAD
     }
 }
 
@@ -176,3 +213,7 @@ body {
         }
     }
 }
+=======
+    }
+}
+>>>>>>> footer
