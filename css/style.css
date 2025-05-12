@@ -600,6 +600,99 @@ h5 {
     display: none;
   }
 }
+.img-responsive {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.width1 {
+  width: 1rem;
+}
+
+.height1 {
+  height: 1rem;
+}
+
+.width2 {
+  width: 2rem;
+}
+
+.height2 {
+  height: 2rem;
+}
+
+.width3 {
+  width: 3rem;
+}
+
+.height3 {
+  height: 3rem;
+}
+
+.width4 {
+  width: 4rem;
+}
+
+.height4 {
+  height: 4rem;
+}
+
+.width5 {
+  width: 5rem;
+}
+
+.height5 {
+  height: 5rem;
+}
+
+.width6 {
+  width: 6rem;
+}
+
+.height6 {
+  height: 6rem;
+}
+
+.width7 {
+  width: 7rem;
+}
+
+.height7 {
+  height: 7rem;
+}
+
+.width8 {
+  width: 8rem;
+}
+
+.height8 {
+  height: 8rem;
+}
+
+.width9 {
+  width: 9rem;
+}
+
+.height9 {
+  height: 9rem;
+}
+
+.width10 {
+  width: 10rem;
+}
+
+.height10 {
+  height: 10rem;
+}
+
+@media screen and (max-width: 414px) {
+  .img-responsive-xs {
+    width: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .btn {
   padding: 1rem 2rem;
   text-align: center;
@@ -611,6 +704,10 @@ h5 {
 .btn:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .border {
