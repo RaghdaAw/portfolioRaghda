@@ -6,7 +6,7 @@
 }
 
 .bg-image2 {
-  background-image: url(/img/background2.jpg);
+  background-image: url("../img/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3278,7 +3278,7 @@ h5 {
 .menu2 a {
   margin: 0 0.5rem;
   padding: 1rem;
-  color: w;
+  color: white;
 }
 .menu2 a.content {
   padding: 1rem 2rem;
@@ -3312,6 +3312,9 @@ h5 {
 
 .float {
   animation: float 2s linear infinite;
+  border-radius: 180px;
+  width: 250px;
+  height: 350px;
 }
 
 @keyframes float {

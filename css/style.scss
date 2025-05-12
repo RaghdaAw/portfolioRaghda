@@ -25,7 +25,7 @@
     a {
         margin: 0 .5rem;
         padding: 1rem;
-        color: w;
+        color: white;
         &.content {
             padding: 1rem 2rem;
             background: $purple;
@@ -62,7 +62,11 @@
 
 .float {
     animation: float 2s linear infinite;
+    border-radius: 180px;
+    width: 250px;
+    height: 350px;
 }
+
 @keyframes float {
 
     0%,
