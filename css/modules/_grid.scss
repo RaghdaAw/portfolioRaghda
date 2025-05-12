@@ -1,0 +1,82 @@
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .jc {
+    &-center {
+      justify-content: center;
+    }
+  
+    &-between {
+      justify-content: space-between;
+    }
+  
+    &-around {
+      justify-content: space-around;
+    }
+  
+    &-evenly {
+      justify-content: space-evenly;
+    }
+  }
+  
+  .ai-center {
+    align-items: center;
+  }
+  
+  .ai-end {
+    align-items: flex-end;
+  }
+  .ta {
+    &-center {
+      text-align: center;
+    }
+  
+    &-right {
+      text-align: right;
+    }
+  
+    &-justify {
+      text-align: justify;
+    }
+  }
+  .flex {
+    display: flex;
+  }
+  
+  .none {
+    display: none;
+  }
+  .relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  
+  .overhidden {
+    overflow: hidden;
+  }
+  
+[class^="col"] {
+    margin: 0 1.5%;
+  }
+  
+  @for $i from 1 through 12 {
+    .col#{$i} {
+      width: (100%/ (12 / $i))-3%;
+    }
+  }
+  @for $i from 1 through 12 {
+    .nmcol#{$i} {
+      width: (100%/ (12 / $i));
+    }
+  }

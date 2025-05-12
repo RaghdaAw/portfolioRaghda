@@ -96,6 +96,194 @@ h5 {
   line-height: 180%;
 }
 
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jc-center {
+  justify-content: center;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.jc-around {
+  justify-content: space-around;
+}
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.ta-center {
+  text-align: center;
+}
+.ta-right {
+  text-align: right;
+}
+.ta-justify {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+[class^=col] {
+  margin: 0 1.5%;
+}
+
+.col1 {
+  width: 5.3333333333%;
+}
+
+.col2 {
+  width: 13.6666666667%;
+}
+
+.col3 {
+  width: 22%;
+}
+
+.col4 {
+  width: 30.3333333333%;
+}
+
+.col5 {
+  width: 38.6666666667%;
+}
+
+.col6 {
+  width: 47%;
+}
+
+.col7 {
+  width: 55.3333333333%;
+}
+
+.col8 {
+  width: 63.6666666667%;
+}
+
+.col9 {
+  width: 72%;
+}
+
+.col10 {
+  width: 80.3333333333%;
+}
+
+.col11 {
+  width: 88.6666666667%;
+}
+
+.col12 {
+  width: 97%;
+}
+
+.nmcol1 {
+  width: 8.3333333333%;
+}
+
+.nmcol2 {
+  width: 16.6666666667%;
+}
+
+.nmcol3 {
+  width: 25%;
+}
+
+.nmcol4 {
+  width: 33.3333333333%;
+}
+
+.nmcol5 {
+  width: 41.6666666667%;
+}
+
+.nmcol6 {
+  width: 50%;
+}
+
+.nmcol7 {
+  width: 58.3333333333%;
+}
+
+.nmcol8 {
+  width: 66.6666666667%;
+}
+
+.nmcol9 {
+  width: 75%;
+}
+
+.nmcol10 {
+  width: 83.3333333333%;
+}
+
+.nmcol11 {
+  width: 91.6666666667%;
+}
+
+.nmcol12 {
+  width: 100%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 10rem;
+}
+.btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.border {
+  border: 0.1rem solid rgb(0, 0, 0);
+}
+.bor-top {
+  border-top: 0.1rem solid rgb(0, 0, 0);
+}
+.bor-bottom {
+  border-bottom: 0.1rem solid rgb(0, 0, 0);
+}
+.bor-bottomwhite {
+  border-bottom: 0.1rem solid white;
+}
+
 .header {
   padding: 0.5rem 0;
   position: fixed;
