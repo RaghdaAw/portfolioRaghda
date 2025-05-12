@@ -20,15 +20,21 @@
 .menu2 {
     display: flex;
     align-items: center;
+    // background: $purple;
 
     a {
-        .content {
+        margin: 0 .5rem;
+        padding: 1rem;
+        color: black;
+        &.content {
             padding: 1rem 2rem;
             background: $purple;
+            border-radius: 50px;
     
             &:hover {
                 background: white;
                 color: $lightpurple;
+                cursor: pointer;
             }
         }
     
