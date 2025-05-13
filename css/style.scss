@@ -135,3 +135,41 @@
         }
     }
 }
+// media queries
+@media screen and (max-width:1024px) {
+
+    .ui,
+    .web {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #burger {
+        display: block;
+    }
+
+    .menu2 {
+        position: absolute;
+        top: 100%;
+        background: $halfpurple;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        display: block;
+
+        a {
+            text-align: center;
+            display: block;
+            margin: 7.5rem 0;
+
+            &.contact {
+                margin: 0 25%;
+            }
+        }
+
+        &.active {
+            right: 0;
+        }
+    }
+}

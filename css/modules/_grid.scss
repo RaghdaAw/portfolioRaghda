@@ -28,10 +28,18 @@
   
   .ai-center {
     align-items: center;
+    
   }
   
   .ai-end {
     align-items: flex-end;
+  }
+
+  .p_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
   }
   .ta {
     &-center {
