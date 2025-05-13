@@ -3145,6 +3145,16 @@ h5 {
      object-fit: cover;
 }
 
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+}
+
 .width1 {
   width: 1rem;
 }
@@ -3280,12 +3290,12 @@ h5 {
   padding: 1rem;
   color: white;
 }
-.menu2 a.content {
+.menu2 a.talk {
   padding: 1rem 2rem;
   background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
   border-radius: 50px;
 }
-.menu2 a.content:hover {
+.menu2 a.talk:hover {
   background: white;
   color: #9F39DA;
   cursor: pointer;
