@@ -42,7 +42,7 @@
   @media screen and (max-width:768px) {
     @for $i from 1 through 15 {
       .size#{$i}-s {
-        font-size: $i * .5rem;
+        font-size: $i * 0.5rem;
       }
     }
   }
