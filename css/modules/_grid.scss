@@ -1,104 +1,105 @@
 .container {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .jc {
+    &-center {
+      justify-content: center;
+    }
+  
+    &-between {
+      justify-content: space-between;
+    }
+  
+    &-around {
+      justify-content: space-around;
+    }
+  
+    &-evenly {
+      justify-content: space-evenly;
+    }
+  }
+  
+  .ai-center {
+    align-items: center;
+    
+  }
+  
+  .ai-end {
+    align-items: flex-end;
+  }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.jc {
-  &-center {
+  .p_center{
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding-top: 1rem;
   }
-
-  &-between {
-    justify-content: space-between;
+  .ta {
+    &-center {
+      text-align: center;
+    }
+  
+    &-right {
+      text-align: right;
+    }
+  
+    &-justify {
+      text-align: justify;
+    }
   }
-
-  &-around {
-    justify-content: space-around;
+  .flex {
+    display: flex;
   }
-
-  &-evenly {
-    justify-content: space-evenly;
+  
+  .none {
+    display: none;
   }
-}
-
-.ai-center {
-  align-items: center;
-}
-
-.ai-end {
-  align-items: flex-end;
-}
-
-.ta {
-  &-center {
-    text-align: center;
+  .relative {
+    position: relative;
   }
-
-  &-right {
-    text-align: right;
+  
+  .absolute {
+    position: absolute;
   }
-
-  &-justify {
-    text-align: justify;
+  
+  
+  .overhidden {
+    overflow: hidden;
   }
-}
-
-.flex {
-  display: flex;
-}
-
-.none {
-  display: none;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-
-.overhidden {
-  overflow: hidden;
-}
-
+  
 [class^="col"] {
-  margin: 0 1.5%;
-}
-
-@for $i from 1 through 12 {
-  .col#{$i} {
-    width: (100%/ (12 / $i))-3%;
+    margin: 0 1.5%;
   }
-}
-
-@for $i from 1 through 12 {
-  .nmcol#{$i} {
-    width: (100%/ (12 / $i));
-  }
-}
-
-@media screen and(max-width:1024px) {
+  
   @for $i from 1 through 12 {
-    .col#{$i}-md {
+    .col#{$i} {
       width: (100%/ (12 / $i))-3%;
     }
   }
+  @for $i from 1 through 12 {
+    .nmcol#{$i} {
+      width: (100%/ (12 / $i));
+    }
+  }
 
+ @media screen and (max-width: 1024px) {
+  @for $i from 1 through 12 {
+    .col#{$i}-md {
+      width: calc(#{100% * $i / 12} - 3%);
+    }
+  }
   @for $i from 1 through 12 {
     .nmcol#{$i}-md {
       width: (100%/ (12 / $i));
     }
   }
-
   .col-reverse-md {
     flex-direction: column-reverse;
   }
@@ -106,7 +107,6 @@
   .flexcol-md {
     flex-direction: column;
   }
-
   .jc {
     &-center-md {
       justify-content: center;
@@ -124,7 +124,6 @@
       justify-content: space-evenly;
     }
   }
-
   .ai-center-md {
     align-items: center;
   }
@@ -142,8 +141,13 @@
       text-align: justify;
     }
   }
-
   .flex-md {
+    display: flex;
+  }
+
+  .none-md {
+    display: none;
+  }  .flex-md {
     display: flex;
   }
 
@@ -151,143 +155,141 @@
     display: none;
   }
 }
-
-@media screen and(max-width:768px) {
-  @for $i from 1 through 12 {
-    .col#{$i}-s {
-      width: (100%/ (12 / $i))-3%;
+@media screen and (max-width:768px) {
+    @for $i from 1 through 12 {
+      .col#{$i}-s {
+        width: (100%/ (12 / $i))-3%;
+      }
+    }
+  
+    @for $i from 1 through 12 {
+      .nmcol#{$i}-s {
+        width: (100%/ (12 / $i));
+      }
+    }
+  
+    .col-reverse-s {
+      flex-direction: column-reverse;
+    }
+  
+    .flexcol-s {
+      flex-direction: column;
+    }
+  
+    .jc {
+      &-center-s {
+        justify-content: center;
+      }
+  
+      &-between-s {
+        justify-content: space-between;
+      }
+  
+      &-around-s {
+        justify-content: space-around;
+      }
+  
+      &-evenly-s {
+        justify-content: space-evenly;
+      }
+    }
+  
+    .ai-center-s {
+      align-items: center;
+    }
+  
+    .ta {
+      &-center-s {
+        text-align: center;
+      }
+  
+      &-right-s {
+        text-align: right;
+      }
+  
+      &-justify-s {
+        text-align: justify;
+      }
+    }
+  
+    .flex-s {
+      display: flex;
+    }
+  
+    .none-s {
+      display: none;
     }
   }
-
-  @for $i from 1 through 12 {
-    .nmcol#{$i}-s {
-      width: (100%/ (12 / $i));
+  @media screen and (max-width:414px) {
+    [class^="col"] {
+      width: 100%;
+    }
+  
+    [class^="nmcol"] {
+      width: 100%;
+    }
+  
+    @for $i from 1 through 12 {
+      .col#{$i}-xs {
+        width: (100%/ (12 / $i))-3%;
+      }
+    }
+  
+    @for $i from 1 through 12 {
+      .nmcol#{$i}-xs {
+        width: (100%/ (12 / $i));
+      }
+    }
+  
+    .col-reverse-xs {
+      flex-direction: column-reverse;
+    }
+  
+    .flexcol-xs {
+      flex-direction: column;
+    }
+  
+    .jc {
+      &-center-xs {
+        justify-content: center;
+      }
+  
+      &-between-xs {
+        justify-content: space-between;
+      }
+  
+      &-around-xs {
+        justify-content: space-around;
+      }
+  
+      &-evenly-xs {
+        justify-content: space-evenly;
+      }
+    }
+  
+    .ai-center-xs {
+      align-items: center;
+    }
+  
+    .ta {
+      &-center-xs {
+        text-align: center;
+      }
+  
+      &-right-xs {
+        text-align: right;
+      }
+  
+      &-justify-xs {
+        text-align: justify;
+      }
+    }
+  
+    .flex-xs {
+      display: flex;
+    }
+  
+    .none-xs {
+      display: none;
     }
   }
-
-  .col-reverse-s {
-    flex-direction: column-reverse;
-  }
-
-  .flexcol-s {
-    flex-direction: column;
-  }
-
-  .jc {
-    &-center-s {
-      justify-content: center;
-    }
-
-    &-between-s {
-      justify-content: space-between;
-    }
-
-    &-around-s {
-      justify-content: space-around;
-    }
-
-    &-evenly-s {
-      justify-content: space-evenly;
-    }
-  }
-
-  .ai-center-s {
-    align-items: center;
-  }
-
-  .ta {
-    &-center-s {
-      text-align: center;
-    }
-
-    &-right-s {
-      text-align: right;
-    }
-
-    &-justify-s {
-      text-align: justify;
-    }
-  }
-
-  .flex-s {
-    display: flex;
-  }
-
-  .none-s {
-    display: none;
-  }
-}
-
-@media screen and(max-width:414px) {
-  [class^="col"] {
-    width: 100%;
-  }
-
-  [class^="nmcol"] {
-    width: 100%;
-  }
-
-  @for $i from 1 through 12 {
-    .col#{$i}-xs {
-      width: (100%/ (12 / $i))-3%;
-    }
-  }
-
-  @for $i from 1 through 12 {
-    .nmcol#{$i}-xs {
-      width: (100%/ (12 / $i));
-    }
-  }
-
-  .col-reverse-xs {
-    flex-direction: column-reverse;
-  }
-
-  .flexcol-xs {
-    flex-direction: column;
-  }
-
-  .jc {
-    &-center-xs {
-      justify-content: center;
-    }
-
-    &-between-xs {
-      justify-content: space-between;
-    }
-
-    &-around-xs {
-      justify-content: space-around;
-    }
-
-    &-evenly-xs {
-      justify-content: space-evenly;
-    }
-  }
-
-  .ai-center-xs {
-    align-items: center;
-  }
-
-  .ta {
-    &-center-xs {
-      text-align: center;
-    }
-
-    &-right-xs {
-      text-align: right;
-    }
-
-    &-justify-xs {
-      text-align: justify;
-    }
-  }
-
-  .flex-xs {
-    display: flex;
-  }
-
-  .none-xs {
-    display: none;
-  }
-}

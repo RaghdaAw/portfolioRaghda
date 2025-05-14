@@ -20,15 +20,21 @@
 .menu2 {
     display: flex;
     align-items: center;
-
+   
     a {
-        .content {
+        margin: 0 .5rem;
+        padding: 1rem;
+        color: white;
+
+        &.talk {
             padding: 1rem 2rem;
             background: $purple;
+            border-radius: 50px;
     
             &:hover {
                 background: white;
                 color: $lightpurple;
+                cursor: pointer;
             }
         }
     
@@ -56,7 +62,11 @@
 
 .float {
     animation: float 2s linear infinite;
+    border-radius: 180px;
+    width: 250px;
+    height: 350px;
 }
+
 @keyframes float {
 
     0%,
@@ -87,5 +97,79 @@
     &:hover {
         transform: scale(1.2);
         cursor: pointer;
+    }
+}
+// footer
+.submit {
+    a {
+        margin-left: 1rem;
+        padding: 1rem 2rem;
+        background: $purple;
+        color: white;
+        transition: 0.5s;
+        border-radius: 10rem;
+
+        &:hover {
+            background: white;
+            color: $lightpurple;
+        }
+    }
+}
+
+.share {
+    text-align: center;
+
+    a {
+        color: white;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        background: $halfwhite;
+        border-radius: 50%;
+        margin: .5rem;
+
+        &:hover {
+            transform: scale(1.2);
+            background: $purple;
+            cursor: pointer;
+        }
+    }
+}
+// media queries
+@media screen and (max-width:1024px) {
+
+    .ui,
+    .web {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #burger {
+        display: block;
+    }
+
+    .menu2 {
+        position: absolute;
+        top: 100%;
+        background: $halfpurple;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        display: block;
+
+        a {
+            text-align: center;
+            display: block;
+            margin: 7.5rem 0;
+
+            &.contact {
+                margin: 0 25%;
+            }
+        }
+
+        &.active {
+            right: 0;
+        }
     }
 }
