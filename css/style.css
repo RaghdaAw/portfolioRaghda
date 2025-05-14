@@ -3162,6 +3162,10 @@ h5 {
   height: 40px;
 }
 
+.round {
+  border-radius: 50%;
+}
+
 .width1 {
   width: 1rem;
 }
