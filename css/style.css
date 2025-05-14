@@ -3409,9 +3409,9 @@ h5 {
   .menu2 {
     position: absolute;
     top: 100%;
-    background: linear-gradient(214.02deg, rgba(183, 92, 255, 0.5) 6.04%, rgba(103, 26, 228, 0.5) 92.95%);
+    background: rgba(183, 92, 255, 0.5);
     right: -100%;
-    width: 70%;
+    width: 100%;
     height: 100vh;
     display: block;
   }
