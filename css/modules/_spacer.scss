@@ -1,52 +1,53 @@
 $i: 1;
+$unit: 1rem;
 
 @while $i <= 15 {
   .space#{$i} {
-    margin: ($i * 1rem) 0;
+    margin: ($i * $unit) 0;
   }
 
   .spacetop#{$i} {
-    margin-top: $i * 1rem;
+    margin-top: $i * $unit;
   }
 
   .spacebottom#{$i} {
-    margin-bottom: $i * 1rem;
+    margin-bottom: $i * $unit;
   }
 
   .spaceright#{$i} {
-    margin-right: $i * 1rem;
+    margin-right: $i * $unit;
   }
 
   .spaceleft#{$i} {
-    margin-left: $i * 1rem;
+    margin-left: $i * $unit;
   }
 
   .spacer#{$i} {
-    padding: ($i * 1rem) 0;
+    padding: ($i * $unit) 0;
   }
 
   .padding#{$i} {
-    padding: $i * 1rem;
+    padding: $i * $unit;
   }
 
   .paddingside#{$i} {
-    padding: 0 ($i * 1rem);
+    padding: 0 ($i * $unit);
   }
 
   .paddingtop#{$i} {
-    padding-top: $i * 1rem;
+    padding-top: $i * $unit;
   }
 
   .paddingbottom#{$i} {
-    padding-bottom: $i * 1rem;
+    padding-bottom: $i * $unit;
   }
 
   .paddingright#{$i} {
-    padding-right: ($i * 1rem);
+    padding-right: ($i * $unit);
   }
 
   .paddingleft#{$i} {
-    padding-left: ($i * 1rem);
+    padding-left: ($i * $unit);
   }
 
   $i: $i + 1;
