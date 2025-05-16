@@ -3365,7 +3365,7 @@ h5 {
   cursor: pointer;
 }
 
-.submit a {
+.submit button {
   margin-left: 1rem;
   padding: 1rem 2rem;
   background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
@@ -3373,7 +3373,7 @@ h5 {
   transition: 0.5s;
   border-radius: 10rem;
 }
-.submit a:hover {
+.submit button:hover {
   background: white;
   color: #9F39DA;
 }
